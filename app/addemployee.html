@@ -1,0 +1,12 @@
+<h1>WELCOME TO ANGULAR 6</h1>
+
+   
+
+ <input type="text" [(ngModel)]="empid" />
+ <input type="text" [(ngModel)]="ename" />
+ <input type="text" [(ngModel)]="esalary" />
+ <input type="button" value="go to show" (click)="addEmployee()" />
+ <div *ngIf="status">
+
+ <show-emp [inchild]=empall ></show-emp>
+</div>
